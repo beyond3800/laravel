@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Checkout extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'product_name',
+        'price',
+        'image',
+        'user_id',
+        'description',
+        'quatity',
+        'short_desc',
+        'menu_id'
+    ];
+}
