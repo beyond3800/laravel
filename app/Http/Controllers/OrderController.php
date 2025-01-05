@@ -48,7 +48,7 @@ class OrderController extends Controller
         return view('show/index',['viewed'=>$order]);
     }
 
-    public function addOrder(Request $request, Order $order)
+    public function addOrder(Request $request)
     {
         $orderId =$request['order_id'];
         $updateOrder= Order::where('menu_id',$orderId)->get();
